@@ -19,7 +19,7 @@ function App() {
         body: postData
     };
     // console.log(options)
-    fetch("/api/setAll", options)
+    fetch("http://localhost:3000/api/setAll", options)
         // .then(res => res.json())
         // .then(resData => console.log(resData))
         // .catch(err => console.log(err))
@@ -36,7 +36,7 @@ function App() {
     //body: postData
   };
 
-  fetch("/api/fechAll", options)
+  fetch("http://localhost:3000/api/fechAll", options)
       .then(res => res.json())
       .then(resData => setData(resData))
       .catch(err => console.log(err))
